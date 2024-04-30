@@ -17,7 +17,7 @@ function HeroPage() {
         };
     }, []);
 
-    // Determine if scrolled based on scroll position
+    
     const isScrolled = scrollPosition > 50;
 
     return (
