@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
+import { Button } from '@mui/material';
 
 function HeroPage() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,10 +37,14 @@ function HeroPage() {
                     <h1 id="line1" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>HARDEEP</h1>
                     <h1 id="line2" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>M.</h1>
                 </div>
+            
             </div>
+            
+
             <div className="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et libero vel ligula vehicula egestas...</p>
+                <p>I am a Full Stack developer based in India, currently looking for internship opportunities in startups and design agencies.</p>
             </div>
+
         </div>
     );
 }
