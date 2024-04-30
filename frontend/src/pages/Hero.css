@@ -1,11 +1,24 @@
 .hero {
-  height: 100vh;
+  height: 80vh;
   width:100%;
   display: flex;
   align-items: center;
   justify-content: left;
   background-color: #f2f2f2;
   position: relative;
+}
+.container {
+  max-width: 600px; /* Define max-width for the page */
+  margin: 0 auto; /* Center the page content */
+  padding: 10px; /* Optional padding */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  /* You can adjust styles for larger screens here */
+  .container {
+      max-width: 800px; /* Example max-width for larger screens */
+  }
 }
 
 #hero-text {

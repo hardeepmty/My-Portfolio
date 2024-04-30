@@ -11,17 +11,15 @@ function HeroPage() {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    
     const isScrolled = scrollPosition > 50;
 
     return (
-        <div>
+        <div className="container"> {/* Wrap the content in a container */}
             <div className="hero">
                 <div
                     id="hero-text"
@@ -37,14 +35,13 @@ function HeroPage() {
                     <h1 id="line1" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>HARDEEP</h1>
                     <h1 id="line2" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>M.</h1>
                 </div>
-            
             </div>
-            
 
             <div className="content">
-                <p>I am a Full Stack developer based in India, currently looking for internship opportunities in startups and design agencies.</p>
+                <p>
+                    I am a Full Stack developer based in India, currently looking for internship opportunities in startups and design agencies.
+                </p>
             </div>
-
         </div>
     );
 }
