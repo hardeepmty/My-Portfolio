@@ -1,5 +1,8 @@
 import React from 'react';
 import { Button, Stack, useMediaQuery } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
+import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
+import DnsIcon from '@mui/icons-material/Dns';
 
 const Navbar = () => {
  
@@ -19,7 +22,7 @@ const Navbar = () => {
                 maxWidth: isSmallScreen ? '350px' : '400px', 
                 alignItems: 'center',
                 // bgcolor: 'rgba(128, 128, 128, 0.1)', 
-                bgcolor: 'gray', 
+                bgcolor: '#191919', 
                 padding: '10px 0',
                 borderRadius: '10px',
                 boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.5)', 
@@ -33,15 +36,16 @@ const Navbar = () => {
                         sx={{
                             
                             color: 'black', 
-                            bgcolor: 'white', 
+                            bgcolor: '#BBAFFE', 
                             '&:hover': {
                                 bgcolor: 'silver',
                             },
-                            fontWeight:"700"
+                            fontWeight:"500"
                         }}
                         size={buttonSize}
                     >
-                        About Me
+                        <PersonIcon></PersonIcon>
+                        About
                     </Button>
                 </li>
                 <li style={{ listStyle: 'none' }}>
@@ -51,12 +55,13 @@ const Navbar = () => {
                             color: 'black', 
                             bgcolor: 'white', 
                             '&:hover': {
-                                bgcolor: 'silver', 
+                                bgcolor: '#EAE6FE', 
                             },
-                            fontWeight:"700"
+                            fontWeight:"500"
                         }}
                         size={buttonSize}
                     >
+                        <SettingsEthernetIcon></SettingsEthernetIcon>
                         Works
                     </Button>
                 </li>
@@ -67,13 +72,14 @@ const Navbar = () => {
                             color: 'black', 
                             bgcolor: 'white', 
                             '&:hover': {
-                                bgcolor: 'silver',
+                                bgcolor: '#EAE6FE',
                             },
-                            fontWeight:"700"
+                            fontWeight:"500"
                         }}
                         size={buttonSize}
                     >
-                        Resume
+                        <DnsIcon></DnsIcon>
+                        CV
                     </Button>
                 </li>
             </ul>

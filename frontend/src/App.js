@@ -1,14 +1,14 @@
 import React from 'react'
 import HeroPage from './pages/HeroPage'
 import Navbar from './components/Navbar'
-import Body from './pages/Body'
+import Projects from './pages/Projects'
 
 const App = () => {
   return (
     <div>
       <Navbar/>
       <HeroPage/>
-      <Body/>
+      <Projects/>
     </div>
   )
 }

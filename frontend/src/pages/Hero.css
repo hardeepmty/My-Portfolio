@@ -1,19 +1,39 @@
 body{
   background-color: black;
+  font-style: "Montserrat";
 }
 
 .container {
   max-width: 600px; 
-  margin: 80px auto; 
-  padding: 10px; 
-  background-color: aliceblue;
+  margin: 90px 10px; 
+  padding: 15px; 
+  gap: 10px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #101010;
 }
 
+.pic{
+  background-color: #191919;
+}
+
+.about{
+  background-color: #191919;
+}
 
 @media (min-width: 768px) {
  
   .container {
       max-width: 800px;
+      margin-left: 25%;
+  }
+  .about .MuiTypography-root {
+    font-size: 1.9rem; /* Adjust the size as needed */
+}
+  body{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 }
 
