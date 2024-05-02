@@ -22,11 +22,7 @@ const Projects = () => {
     >
       <Typography variant='h5' sx={{color:"#404040",fontWeight:"500", fontFamily:"Montserrat"}}><AccountTreeIcon sx={{fontSize:"large", color:"#A291FD"}}></AccountTreeIcon> Projects</Typography>
     </div>
-    <div className="scroll-container">
-      {imagesData.map((image, index) => (
-        <img key={index} src={image} alt={`Image ${index}`} />
-      ))}
-    </div>
+ 
     </div>
   );
 };
