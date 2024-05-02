@@ -1,0 +1,23 @@
+/* Projects.css */
+
+/* Default styling */
+.projects {
+  max-width: 600px;
+  margin: 30px 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #101010;
+  text-align: center;
+}
+
+/* Media query for laptop view (screens wider than 1024px) */
+@media (min-width: 1024px) {
+  .projects {
+    max-width: 800px; /* Increase max-width for laptops */
+    margin: 30px auto; /* Center the projects div */
+    padding: 20px; /* Add some additional padding */
+  }
+}
