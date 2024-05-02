@@ -1,40 +1,21 @@
-.hero {
-  height: 80vh;
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: #f2f2f2;
-  position: relative;
-}
-.container {
-  max-width: 600px; /* Define max-width for the page */
-  margin: 0 auto; /* Center the page content */
-  padding: 10px; /* Optional padding */
+body{
+  background-color: black;
 }
 
-/* Responsive styles */
+.container {
+  max-width: 600px; 
+  margin: 80px auto; 
+  padding: 10px; 
+  background-color: aliceblue;
+}
+
+
 @media (min-width: 768px) {
-  /* You can adjust styles for larger screens here */
+ 
   .container {
-      max-width: 800px; /* Example max-width for larger screens */
+      max-width: 800px;
   }
 }
 
-#hero-text {
-  text-align: left;
-  transition: all 0.5s ease;
-  margin-left: 5%;
-}
 
-#line1, #line2 {
-  font-size: 10vw;
-  margin: 0;
-  transition: all 0.8s ease-out;
-}
-
-.content {
-  height: 1000px; 
-  padding: 20px;
-}
 

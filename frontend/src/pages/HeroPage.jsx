@@ -19,29 +19,8 @@ function HeroPage() {
     const isScrolled = scrollPosition > 50;
 
     return (
-        <div className="container"> {/* Wrap the content in a container */}
-            <div className="hero">
-                <div
-                    id="hero-text"
-                    style={{
-                        position: isScrolled ? 'absolute' : 'static',
-                        bottom: isScrolled ? '5%' : 'auto',
-                        left: isScrolled ? '0%' : '0%',
-                        transform: isScrolled ? 'none' : '',
-                        textAlign: 'left',
-                        marginLeft: isScrolled ? '' : '5%',
-                    }}
-                >
-                    <h1 id="line1" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>HARDEEP</h1>
-                    <h1 id="line2" style={{ fontSize: isScrolled ? '3vw' : '10vw' }}>M.</h1>
-                </div>
-            </div>
-
-            <div className="content">
-                <p>
-                    I am a Full Stack developer based in India, currently looking for internship opportunities in startups and design agencies.
-                </p>
-            </div>
+        <div className="container"> 
+            
         </div>
     );
 }
