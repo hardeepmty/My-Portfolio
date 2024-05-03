@@ -21,3 +21,37 @@
     padding: 20px; /* Add some additional padding */
   }
 }
+
+/* Container for the marquee */
+.marquee-container {
+  padding: 1%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+  margin: 20px auto; /* Add margin for separation */
+  /* background-color: rgba(22, 30, 40, 0.581);
+  box-shadow: 0 2px 4px 0 rgba(231, 226, 226, 0.5); */
+}
+
+/* Marquee holding the images */
+.marquee {
+  display: inline-flex; /* Use inline-flex to align images in a row */
+  animation: marquee 12s linear infinite; /* Adjust speed as desired */
+}
+
+/* Style for individual images in the marquee */
+.marquee img {
+  height: 100px; /* Adjust height as desired */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between images */
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
