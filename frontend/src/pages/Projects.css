@@ -13,40 +13,42 @@
   text-align: center;
 }
 
-/* Media query for laptop view (screens wider than 1024px) */
+
 @media (min-width: 1024px) {
   .projects {
-    max-width: 800px; /* Increase max-width for laptops */
-    margin: 30px auto; /* Center the projects div */
-    padding: 20px; /* Add some additional padding */
+    max-width: 800px; 
+    margin: 30px auto;
+    padding: 20px; 
+  }
+  .pro{
+    margin-left: 460px;
+    max-width: 800px;
   }
 }
 
-/* Container for the marquee */
+
 .marquee-container {
   padding: 1%;
   overflow: hidden;
   white-space: nowrap;
   width: 90%;
-  margin: 20px auto; /* Add margin for separation */
-  /* background-color: rgba(22, 30, 40, 0.581);
-  box-shadow: 0 2px 4px 0 rgba(231, 226, 226, 0.5); */
+  margin: 20px auto; 
+ 
 }
 
-/* Marquee holding the images */
+
 .marquee {
-  display: inline-flex; /* Use inline-flex to align images in a row */
-  animation: marquee 12s linear infinite; /* Adjust speed as desired */
+  display: inline-flex; 
+  animation: marquee 60s linear infinite; 
 }
 
-/* Style for individual images in the marquee */
+
 .marquee img {
-  height: 100px; /* Adjust height as desired */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add spacing between images */
+  height: 100px; 
+  width: auto; 
+  margin-right: 10px; 
 }
 
-/* Marquee animation */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
