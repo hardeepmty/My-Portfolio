@@ -6,7 +6,7 @@ import { imageUrls } from "../lib/data/works"
 
 const Projects = () => {
   
-  const continuousImageUrls = [...imageUrls, ...imageUrls];
+  const continuousImageUrls = [...imageUrls, ...imageUrls, ...imageUrls];
 
   return (
     <div className='pro'>
