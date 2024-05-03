@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import TableRowsSharpIcon from '@mui/icons-material/TableRowsSharp';
 import { tech } from '../lib/data/tech'; 
-import './TechStack.css';
+import './TechStack.css';                    
 
 const TechStack = () => {
   return (
