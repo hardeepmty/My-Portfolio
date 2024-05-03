@@ -9,7 +9,6 @@ const Navbar = () => {
 
     const buttonSize = isSmallScreen ? 'medium' : 'medium';
 
-    // Define the URL of your CV PDF file
     const cvPdfUrl = 'images/cv.pdf';
 
     return (
@@ -65,7 +64,6 @@ const Navbar = () => {
                     </Button>
                 </li>
                 <li style={{ listStyle: 'none' }}>
-                    {/* Wrap the button in an anchor element to link it to your CV PDF file */}
                     <a href={cvPdfUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                         <Button 
                             variant="contained"

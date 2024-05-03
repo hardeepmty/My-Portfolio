@@ -46,7 +46,7 @@ function HeroPage() {
                         <AbcIcon sx={{ fontSize: "small", color: "#A291FD" }} />Developer
                     </p>
                 </div>
-                <img src='/images/PNG.gif' alt='GIF' style={{ width: "110px", borderRadius: "10px", height: "70px", marginLeft: "2px", marginTop: "5px", border: "2px solid #757575" }} />
+                <img src='/images/PNG.gif' alt='GIF' style={{ width: "115px", borderRadius: "10px", height: "70px", marginLeft: "2px", marginTop: "5px", border: "2px solid #757575" }} />
             </div>
             <div className='about' style={{ borderRadius: "10px" }}>
                 <Typography variant="h5" sx={{ margin: "5px", fontFamily: "Montserrat", fontWeight: "700", color: "#e6e6e6" }}>
