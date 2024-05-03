@@ -47,5 +47,30 @@ export const tech = [
     name: 'Typescript',
     image: 'images/typescript.png', 
   },
+  {
+    name: 'Postman',
+    image: 'images/postman.png', 
+  },
+  {
+    name: 'Tailwind CSS',
+    image: 'images/taimwind.png', 
+  },
+  {
+    name: 'Next JS',
+    image: 'images/next.png', 
+  },
+  {
+    name: 'Bootstrap',
+    image: 'images/bootstrap.png', 
+  },
+  {
+    name: 'Firebase',
+    image: 'images/firebase.png', 
+  },
+  {
+    name: 'Material UI',
+    image: 'images/mui.png', 
+  },
+
 
 ];
