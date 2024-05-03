@@ -1,55 +1,51 @@
 export const tech = [
   {
     name: 'JavaScript',
-    image: 'path/to/javascript-image.jpg', 
+    image: 'images/javascript.png', 
   },
   {
     name: 'React',
-    image: 'path/to/react-image.jpg', 
+    image: 'images/react.png', 
   },
   {
     name: 'Node.js',
-    image: 'path/to/nodejs-image.jpg', 
+    image: 'images/nodejs.png', 
   },
   {
     name: 'Python',
-    image: 'path/to/python-image.jpg', 
+    image: 'images/python.png', 
   },
   {
     name: 'HTML',
-    image: 'path/to/html-image.jpg',
+    image: 'images/html.png',
   },
   {
     name: 'CSS',
-    image: 'path/to/css-image.jpg', 
+    image: 'images/css.png', 
   },
   {
     name: 'MongoDB',
-    image: 'path/to/mongodb-image.jpg', 
+    image: 'images/mongodb.png', 
   },
   {
     name: 'Express JS',
-    image: 'path/to/mongodb-image.jpg', 
+    image: 'images/express.png', 
   },
   {
     name: 'Github',
-    image: 'path/to/mongodb-image.jpg', 
+    image: 'images/github.png', 
   },
   {
     name: 'Canva',
-    image: 'path/to/mongodb-image.jpg',
+    image: 'images/canva.png',
   },
   {
     name: 'Figma',
-    image: 'path/to/mongodb-image.jpg', 
+    image: 'images/figma.png', 
   },
   {
     name: 'Typescript',
-    image: 'path/to/mongodb-image.jpg', 
-  },
-  {
-    name: 'Next JS',
-    image: 'path/to/mongodb-image.jpg', 
+    image: 'images/typescript.png', 
   },
 
 ];
