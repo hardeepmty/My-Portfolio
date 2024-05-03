@@ -5,11 +5,12 @@ import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
 import DnsIcon from '@mui/icons-material/Dns';
 
 const Navbar = () => {
- 
     const isSmallScreen = useMediaQuery('(max-width: 600px)');
 
-
     const buttonSize = isSmallScreen ? 'medium' : 'medium';
+
+    // Define the URL of your CV PDF file
+    const cvPdfUrl = 'images/cv.pdf';
 
     return (
         <Stack
@@ -21,7 +22,6 @@ const Navbar = () => {
                 width: '100%',
                 maxWidth: isSmallScreen ? '350px' : '400px', 
                 alignItems: 'center',
-                // bgcolor: 'rgba(128, 128, 128, 0.1)', 
                 bgcolor: '#191919', 
                 padding: '10px 0',
                 borderRadius: '10px',
@@ -34,17 +34,16 @@ const Navbar = () => {
                     <Button 
                         variant="contained"
                         sx={{
-                            
-                            color: 'black', 
-                            bgcolor: '#BBAFFE', 
+                            color: 'black',
+                            bgcolor: '#BBAFFE',
                             '&:hover': {
                                 bgcolor: 'silver',
                             },
-                            fontWeight:"500"
+                            fontWeight: "500"
                         }}
                         size={buttonSize}
                     >
-                        <PersonIcon></PersonIcon>
+                        <PersonIcon />
                         About
                     </Button>
                 </li>
@@ -52,35 +51,38 @@ const Navbar = () => {
                     <Button 
                         variant="contained"
                         sx={{
-                            color: 'black', 
-                            bgcolor: 'white', 
+                            color: 'black',
+                            bgcolor: 'white',
                             '&:hover': {
-                                bgcolor: '#EAE6FE', 
+                                bgcolor: '#EAE6FE',
                             },
-                            fontWeight:"500"
+                            fontWeight: "500"
                         }}
                         size={buttonSize}
                     >
-                        <SettingsEthernetIcon></SettingsEthernetIcon>
+                        <SettingsEthernetIcon />
                         Works
                     </Button>
                 </li>
                 <li style={{ listStyle: 'none' }}>
-                    <Button 
-                        variant="contained"
-                        sx={{
-                            color: 'black', 
-                            bgcolor: 'white', 
-                            '&:hover': {
-                                bgcolor: '#EAE6FE',
-                            },
-                            fontWeight:"500"
-                        }}
-                        size={buttonSize}
-                    >
-                        <DnsIcon></DnsIcon>
-                        CV
-                    </Button>
+                    {/* Wrap the button in an anchor element to link it to your CV PDF file */}
+                    <a href={cvPdfUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <Button 
+                            variant="contained"
+                            sx={{
+                                color: 'black',
+                                bgcolor: 'white',
+                                '&:hover': {
+                                    bgcolor: '#EAE6FE',
+                                },
+                                fontWeight: "500"
+                            }}
+                            size={buttonSize}
+                        >
+                            <DnsIcon />
+                            CV
+                        </Button>
+                    </a>
                 </li>
             </ul>
         </Stack>
