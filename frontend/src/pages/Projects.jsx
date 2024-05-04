@@ -3,8 +3,11 @@ import { Button, Typography } from '@mui/material';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import './Projects.css';
 import { imageUrls } from "../lib/data/works"
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+
+  const navigate = useNavigate() ;
   
   const continuousImageUrls = [...imageUrls, ...imageUrls, ...imageUrls];
 
@@ -40,7 +43,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <Button variant="contained" sx={{ bgcolor: '#A291FD',  color: 'black',mt:"-25px", size:"medium",fontFamily:"Montserrat",fontWeight:"500", border:"2px solid #191919" }}>
+        <Button variant="contained" onClick={() => navigate('/works')} sx={{ bgcolor: '#A291FD',  color: 'black',mt:"-25px", size:"medium",fontFamily:"Montserrat",fontWeight:"500", border:"2px solid #191919" }}>
             View Works
           </Button>
 
