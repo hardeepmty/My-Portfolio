@@ -7,7 +7,7 @@ const Works = () => {
         tastify: 'https://tastify-4.netlify.app/',
         illumina: 'https://illumina-2k24.vercel.app/',
         portfolio: 'https://example.com/portfolio',
-        pokemon: 'https://github.com/hardeepmty/pokemon'
+        pokemon: 'https://pokemon-webcentric.netlify.app/'
     };
 
     const renderProject = (link, imgSrc, title, description, techStack) => (
@@ -44,7 +44,7 @@ const Works = () => {
             <hr
                 style={{
                     marginTop: '10px', 
-                    border: '1px solid white', 
+                    border: '1px solid silver', 
                     width: '80%', 
                 }}
             />
@@ -69,7 +69,7 @@ const Works = () => {
             {renderProject(links.tastify, '/images/tastify.png', 'TASTIFY', 'Tastify simplifies food ordering with a variety of delicious dishes and seamless delivery, bringing culinary delights directly to your door.', 'MongoDB, ExpressJS, ReactJS, NodeJS')}
             {renderProject(links.illumina, '/images/illumina.png', 'ILLUMINA 2024', 'Illumina: VSSUT College Sports Fest Website', 'Vite, NextJS, Typescript, Material UI')}
             {renderProject(links.portfolio, '/images/portfolio.png', 'PORTFOLIO', 'Explore my portfolio website, where I blend creativity with technology to deliver exceptional digital experiences.', 'React, Material UI')}
-            {renderProject(links.pokemon, '/images/pokemon.JPG', 'POKEMON', 'Discover a Pokémon API-powered website with stunning design, offering comprehensive Pokédex information and engaging games for all Pokémon enthusiasts.', 'HTML, CSS, JS, API')}
+            {renderProject(links.pokemon, '/images/pokemon.png', 'POKEMON', 'Discover a Pokémon API-powered website with stunning design, offering comprehensive Pokédex information and engaging games for all Pokémon enthusiasts.', 'HTML, CSS, JS, API')}
         </div>
     );
 };
