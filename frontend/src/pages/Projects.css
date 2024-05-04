@@ -16,13 +16,13 @@
 
 @media (min-width: 1024px) {
   .projects {
-    max-width: 800px; 
-    margin: 30px auto;
-    padding: 20px; 
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
   }
-  .pro{
-    margin-left: 460px;
-    max-width: 800px;
+  .pro {
+      margin-left: 460px;
+      max-width: 800px;
   }
 }
 
@@ -32,29 +32,27 @@
   overflow: hidden;
   white-space: nowrap;
   width: 90%;
-  margin: 20px auto; 
- 
+  margin: 20px auto;
 }
 
 
 .marquee {
-  display: inline-flex; 
-  animation: marquee 30s linear infinite; 
-  animation-delay: 0s;
+  display: inline-flex;
+  animation: marquee 20s linear infinite; /* Adjust the duration for desired speed */
 }
 
 
 .marquee img {
-  height: 100px; 
-  width: auto; 
-  margin-right: 10px; 
+  height: 100px;
+  width: auto;
+  margin-right: 10px;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+      transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+      transform: translateX(-100%);
   }
 }
