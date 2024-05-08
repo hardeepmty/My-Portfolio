@@ -7,7 +7,8 @@ const Works = () => {
         tastify: 'https://tastify-4.netlify.app/',
         illumina: 'https://illumina-2k24.vercel.app/',
         portfolio: 'https://example.com/portfolio',
-        pokemon: 'https://pokemon-webcentric.netlify.app/'
+        pokemon: 'https://pokemon-webcentric.netlify.app/',
+        certify: 'https://certify-csv.netlify.app/',
     };
 
     const renderProject = (link, imgSrc, title, description, techStack) => (
@@ -65,6 +66,7 @@ const Works = () => {
                 alignItems: 'center',
             }}
         >
+            {renderProject(links.certify, '/images/certify.png', 'CERTIFY', 'Certify is an online platform for creating certificates, with a bulk generation feature that lets you upload a CSV file to quickly produce certificates for multiple candidates.', 'MERN, pdf-lib, csv-parser, multer, adm-zip')}
             {renderProject(links.iceCream, '/images/icecream.png', 'ICE CREAM', 'Explore Chill Delights, an ice cream website with stunning Spline visuals for captivating shopping experience.', 'React, Spline, Material UI')}
             {renderProject(links.tastify, '/images/tastify.png', 'TASTIFY', 'Tastify simplifies food ordering with a variety of delicious dishes and seamless delivery, bringing culinary delights directly to your door.', 'MongoDB, ExpressJS, ReactJS, NodeJS')}
             {renderProject(links.illumina, '/images/illumina.png', 'ILLUMINA 2024', 'Illumina: VSSUT College Sports Fest Website', 'Vite, NextJS, Typescript, Material UI')}
